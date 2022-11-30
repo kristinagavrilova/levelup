@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Level UP</title>
     <link rel="stylesheet" href="../css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
 <body>
 <video autoplay muted loop id="myVideo">
@@ -70,9 +71,39 @@
     </div>
 </div>
 
-<div class="slider">
-
+<div class="sliders">
+    <div id="slider">
+        <i class="control_next"> > </i>
+        <i class="control_prev"> < </i>
+        <ul>
+            <li class="users">
+                <div class="userName">
+                <img class="user" src="../img/img_7.png" alt="User">
+                <span>Петр Петрович</span>
+            </div>
+                <span class="opinion">Хороший препарат мне понравился, работает по времени как написано в инструкции. Для мужчин то что
+                    надо, в пожилом возрасте  </span>
+            </li>
+            <li class="users">
+                <div class="userName">
+                    <img class="user" src="../img/img_9.png" alt="User">
+                <span>Антон</span>
+                </div>
+                <span class="opinion">Как будто снова подростком стал! Отличный эффект! Просто в точку, все что там заявлено -
+                    вот ровно так и сработало со мной! Спасибо большое за препарат,
+                    очень надеюсь что его не перестанут производить !!  </span></li>
+            <li class="users">
+                <div class="userName">
+                <img class="user" src="../img/img_6.png" alt="User">
+                <span>Иван</span>
+                </div>
+                <span class="opinion">Есть результат. Покупкой очень доволен я и моя жена!</span>
+            </li>
+        </ul>
+    </div>
 </div>
+
+
 <div class="promo1">
 <div class="containerPromo">
     <div class="promoDes">
@@ -97,10 +128,32 @@
     </div>
 </div>
 
+<div class="formOrder">
+    <div class="formOrderTitle">LevelUp</div>
+
+    <div class="time"><span id="timer"></span></div>
+
+    <div class="formPrice">
+
+    <div class="formOrderImg">
+        <img src="../img/prod.png" alt="Продукт">
+        <formOrderPrise> old price 2000 / mew price 1000</formOrderPrise>
+    </div>
+
+    <div class="formOrderForm">
+        <input placeholder="name">
+        <input type="number" type="tel" placeholder="+7 (900) 000 00 00">
+        <div class="order">
+            <button class="btnOrder btn">Оформить заказ</button>
+    </div>
+    </div>
+</div>
 
 
 
 
 
+<script src="../js/script.js"></script>
+<script src="../js/scriptTimer.js"></script>
 </body>
 </html>

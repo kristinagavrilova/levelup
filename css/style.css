@@ -235,9 +235,11 @@ border-color: #711198;
     align-items: center;
 }
 
-.slider{
-    height: 100vh;
+.sliders{
+    width: 100%;
+    height: 90vh;
     z-index: 999;
+    background: linear-gradient(45deg, rgb(246, 153, 49), rgb(119, 49, 189), rgb(4, 0, 6));
 }
 
 .promo1 {
@@ -303,6 +305,155 @@ border-color: #711198;
 }
 
 
+#slider {
+    position: relative;
+    overflow: hidden;
+    margin: 5% auto 5% auto;
+    border-radius: 4px;
+}
+
+#slider ul {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 50vh;
+    list-style: none;
+}
+
+.users {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+
+    float: left;
+
+    padding: 0;
+    width: 50vw;
+    height: 60vh;
+    background: #fca443;
+
+
+}
+.userName {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.users > div > img {
+    width: 350px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+i.control_prev, i.control_next {
+    position: absolute;
+    top: 40%;
+    z-index: 999;
+    display: block;
+    padding: 4% 3%;
+    width: auto;
+    height: auto;
+    background: #2a2a2a;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+i.control_prev:hover, i.control_next:hover {
+    opacity: 1;
+    transition: all 0.2s ease;
+}
+
+i.control_prev {
+    border-radius: 0 2px 2px 0;
+}
+
+i.control_next {
+    right: 0;
+    border-radius: 2px 0 0 2px;
+}
+
+.opinion {
+    width: 30vw;
+}
+
+
+.formOrder {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.time {
+    width: 100%;
+    background-color:#F69931FF;
+    color:#61428f;
+    font-size:4rem;
+    text-align:center;
+}
+
+.formOrderTitle {
+   font-size: 5rem;
+
+}
+
+.formPrice {
+    display: grid;
+    gap: 10px;
+    width: 70%;
+    height: 60vh;
+
+    grid-template-areas:
+"B B B B    C C C C"
+"B B B B    C C C C";
+}
+
+.formOrderImg {
+    grid-area: B;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.formOrderImg > img {
+    width: 350px;
+    height: 500px;
+}
+
+.formOrderForm {
+    grid-area: C;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btn{
+    width: 100%;
+}
+
+.formOrderForm > input {
+    display:block;
+    width:100%;
+    margin:10px 0;
+    padding:10px;
+    background-color: #fafafa;
+    border:0;
+    box-shadow:0 0 4px rgba(0,0,0,0.3);
+    transition: .3s box-shadow;
+}
+
+.formOrderForm > inpu:hover {
+    box-shadow:0 0 4px rgba(0,0,0,0.5);
+}
 
 
 
