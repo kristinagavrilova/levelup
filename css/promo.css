@@ -1,0 +1,131 @@
+#myVideo {
+    object-fit: fill;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:99%;
+}
+
+.container {
+    z-index: 999;
+    width: 90%;
+    height: 97vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.promo {
+    display: grid;
+    gap: 20px;
+    width: 100%;
+    height: 70vh;
+
+    grid-template-areas:
+    "B  C"
+    "B  C";
+}
+
+.promoTitle {
+    align-self : stretch;
+    text-align: center;
+    margin-bottom: 5%;
+    color: #711198;
+    padding-top: 3%;
+    font-size: 6rem;
+}
+
+.promoTitle:hover {
+    color: #FF9700FF;
+    transition: 0.3s all linear;
+}
+.promoDescription {
+    text-align: center;
+    height:60%;
+    grid-area: B;
+}
+.promoDescription1 {
+    height: 70%;
+    grid-area: C;
+    text-align: center;
+    align-self : center;
+}
+
+.border {
+    padding: 0;
+}
+
+.border > li {
+    list-style-type: none;
+    font-family: "RalewayRegular", sans-serif;
+    padding: 7px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border-left: 10px solid #711198;
+    box-shadow: 2px -2px 5px 0 rgba(0,0,0,.1),
+    -2px -2px 5px 0 rgba(0,0,0,.1),
+    2px 2px 5px 0 rgba(0,0,0,.1),
+    -2px 2px 5px 0 rgba(0,0,0,.1);
+    font-size: 20px;
+    letter-spacing: 2px;
+    transition: 0.3s all linear;
+    background-color: #d9d9d9;
+}
+.border li:hover {
+    border-left: 10px solid transparent;
+}
+.border li:hover {
+    border-right: 10px solid #efc612;
+}
+
+.btnOrder {
+    width: 150px;
+    height: 50px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+}
+.btnOrder{
+    background: rgb(255,151,0);
+    border: none;
+    z-index: 1;
+}
+.btnOrder:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 5px;
+    background-color: #61428f;
+    background-image: linear-gradient(315deg, #6433ab 0%, #b69ce3 74%);
+    box-shadow:inset 2px 2px 2px 0 rgba(255,255,255,.5);
+    transition: all 0.3s ease;
+}
+.btnOrder:hover {
+    color: #000;
+}
+.btnOrder:hover:after {
+    top: auto;
+    bottom: 0;
+    height: 100%;
+}
+.btnOrder:active {
+    top: 2px;
+}

@@ -1,0 +1,130 @@
+@media screen and (max-width: 940px) {
+    .promo {
+        height: 100%;
+        grid-template-areas:
+                "B"
+                "C";
+    }
+    .composition {
+        grid-template-areas:
+                "A B C"
+                "D D D"
+                "E J K";
+    }
+    .promoTitle {
+        font-size: 3rem;
+    }
+
+    .circle-image{
+        width:100px;
+        height: 100px;
+    }
+
+    .text {
+        font-size: 16px;
+    }
+    .containerPromo {
+        grid-template-areas:
+"C "
+"B ";
+    }
+    .doc {
+        width: 300px;
+        height: 400px;
+    }
+    .promoUl {
+        margin-top: 5%;
+        font-size: 14px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .formPrice {
+        width: 70%;
+        height: 60vh;
+
+        grid-template-areas:
+"B "
+"C";
+    }
+    .prodIMG {
+        width: 300px;
+        height: 400px;
+    }
+    .formOrderImg {
+        height: 35%;
+    }
+    #slider ul {
+        height: 20%;
+    }
+    .users {
+        width: 50vw;
+        height: 45vh;
+    }
+    .users > div > img {
+        width: 150px;
+        height: 125px;
+    }
+    i.control_prev, i.control_next {
+        font-size: 12px;
+    }
+
+
+
+
+
+}
+
+@media screen and (max-width: 600px) {
+    .promo {
+        height: 60%;
+        grid-template-areas:
+                "B"
+                "C";
+    }
+    .composition {
+        grid-template-areas:
+                "A B C"
+                "D D D"
+                "E J K";
+    }
+    .promoTitle {
+        font-size: 2rem;
+    }
+
+    .border > li {
+        font-size: 14px;
+    }
+    .prodIMG {
+        width: 200px;
+        height: 300px;
+    }
+
+    .circle-image{
+        width:70px;
+        height: 70px;
+    }
+    .text {
+        font-size: 14px;
+    }
+    .promoUl {
+        margin-top: 5%;
+        font-size: 12px;
+
+    }
+    .doc {
+        width: 200px;
+        height: 300px;
+    }
+
+    .time {
+        font-size:2rem;
+    }
+    .formOrderTitle {
+        font-size: 3rem;
+
+    }
+
+
+
+
+}

@@ -1,0 +1,112 @@
+.opinion {
+    width: 30vw;
+}
+
+
+.formOrder {
+    background: linear-gradient(45deg, rgb(167, 167, 167) 56%, rgb(216, 135, 255));
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.time {
+    width: 100%;
+    background-color:#F69931FF;
+    color:#61428f;
+    font-size:4rem;
+    text-align:center;
+}
+
+.formOrderTitle {
+    font-size: 5rem;
+}
+
+.formPrice {
+    display: grid;
+    gap: 10px;
+    width: 70%;
+    height: 60vh;
+
+    grid-template-areas:
+"B  C"
+"B  C";
+}
+
+.formOrderImg {
+    grid-area: B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    height: 500px;
+}
+
+
+
+.formOrderForm {
+    grid-area: C;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btn{
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.formOrderForm > input {
+    display:block;
+    width:100%;
+    margin:10px 0;
+    padding:10px;
+    background-color: #fafafa;
+    border:0;
+    box-shadow:0 0 4px rgba(0,0,0,0.3);
+    transition: .3s box-shadow;
+}
+
+.formOrderForm > input:hover {
+    box-shadow:0 0 4px rgba(0,0,0,0.5);
+}
+
+
+.oldPrise {
+    text-decoration : line-through red;
+    font-size: 14px;
+}
+
+@keyframes anime {
+    0% {
+        color: orange;
+    }
+    33% {
+        color: red;
+    }
+    66% {
+        color: #7b00ff;
+    }
+    100% {
+        color: orange;
+    }
+}
+
+h2 {
+    animation: anime infinite 2s linear;
+}
+
+.newPrice {
+    margin-left: 4%;
+    transition-property: color;
+    transition-duration: 3s;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+

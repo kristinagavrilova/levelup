@@ -1,0 +1,74 @@
+.composition {
+    width: 80%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    z-index: 999;
+    display: grid;
+    gap: 100px;
+    justify-content: space-evenly;
+    grid-template-areas:
+        "A  D D  E"
+        "B  D D  J"
+        "C  D D  K"
+}
+.cont {
+    width: 100%;
+    background: linear-gradient(45deg, rgb(252, 164, 67), rgb(167, 167, 167) 37%);
+    font-size: 20px;
+    color: white;
+    font-family: "RalewayRegular", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle-image{
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+}
+
+.circle-image img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.compositionItem-1 {
+    grid-area: A;
+}
+
+.compositionItem-2 {
+    grid-area: B;
+}
+
+.compositionItem-3 {
+    grid-area: C;
+}
+
+.compositionItem-4 {
+    grid-area: E;
+}
+
+.compositionItem-5 {
+    grid-area: J;
+}
+
+.compositionItem-6 {
+    grid-area: K;
+}
+
+.imgItem {
+    grid-area: D;
+    align-self : center;
+    justify-self : center;
+}
+
+.flexItem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
