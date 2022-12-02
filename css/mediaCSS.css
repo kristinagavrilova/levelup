@@ -5,39 +5,49 @@
                 "B"
                 "C";
     }
+
     .section-description__items {
         grid-template-areas:
                 "A B C"
                 "D D D"
                 "E J K";
     }
+
     .header-promo__title {
         font-size: 3rem;
     }
 
-    .item__circle-image{
-        width:100px;
+    .item__circle-image {
+        width: 100px;
         height: 100px;
     }
 
     .text {
         font-size: 16px;
     }
+
     .section-promo__content {
         grid-template-areas:
-"C "
+"A "
 "B ";
     }
+
     .img__doc {
         width: 300px;
         height: 400px;
     }
+
     .promo-description__item {
         margin-top: 5%;
         font-size: 14px;
         display: flex;
         justify-content: space-between;
     }
+
+    .content__text{
+        width: 100%;
+    }
+
     .section-order__content {
         width: 70%;
         height: 60vh;
@@ -46,85 +56,93 @@
 "B "
 "C";
     }
+
     .img__prod {
-        width: 300px;
-        height: 400px;
+        width: 200px;
     }
+
     .content__img {
         height: 35%;
     }
+
     #section-slider__slider ul {
         height: 20%;
     }
+
     .item__user {
         width: 50vw;
         height: 45vh;
     }
+
     .item__user > div > img {
         width: 150px;
         height: 125px;
     }
+
     i.js-control_prev, i.js-control_next {
         font-size: 12px;
     }
-
-
-
 
 
 }
 
 @media screen and (max-width: 600px) {
     .header-promo__content {
-        height: 60%;
         grid-template-areas:
                 "B"
                 "C";
     }
+
     .section-description__items {
         grid-template-areas:
                 "A B C"
                 "D D D"
                 "E J K";
     }
+
     .header-promo__title {
         font-size: 2rem;
     }
-
+.user__opinion{
+    font-size: 10px;
+}
     .promo-description-text__list > li {
         font-size: 14px;
     }
+
     .img__prod {
         width: 200px;
         height: 300px;
     }
 
-    .item__circle-image{
-        width:70px;
+    .item__circle-image {
+        width: 70px;
         height: 70px;
     }
+
     .text {
         font-size: 14px;
     }
+
     .promo-description__item {
         margin-top: 5%;
         font-size: 12px;
 
     }
+
     .img__doc {
         width: 200px;
         height: 300px;
     }
 
     .section-order__timer {
-        font-size:2rem;
+        font-size: 2rem;
     }
+
     .section-order__title {
         font-size: 3rem;
 
     }
-
-
 
 
 }
