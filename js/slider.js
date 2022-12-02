@@ -38,3 +38,11 @@ $('.js-control_next').click(function () {
     moveRight();
 });
 
+window.addEventListener('resize', () => {
+    slideWidth = slider.width();
+    slideHeight = slider.height();
+    sliderUlWidth = slideCount * slideWidth;
+
+    $('.section-slider__slider').css({width: slideWidth, height: slideHeight});
+    $('.section-slider__item').css({width: sliderUlWidth, marginLeft: -slideWidth});
+}, true);
