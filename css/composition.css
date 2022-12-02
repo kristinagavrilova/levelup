@@ -1,4 +1,4 @@
-.composition {
+.section-description__items {
     width: 80%;
     margin-top: 5%;
     margin-bottom: 5%;
@@ -11,7 +11,7 @@
         "B  D D  J"
         "C  D D  K"
 }
-.cont {
+.section-description {
     width: 100%;
     background: linear-gradient(45deg, rgb(252, 164, 67), rgb(167, 167, 167) 37%);
     font-size: 20px;
@@ -23,7 +23,7 @@
     justify-content: center;
 }
 
-.circle-image{
+.item__circle-image{
     display: inline-block;
     border-radius: 50%;
     overflow: hidden;
@@ -31,43 +31,43 @@
     height: 200px;
 }
 
-.circle-image img{
+.item__circle-image img{
     width:100%;
     height:100%;
     object-fit: cover;
 }
 
-.compositionItem-1 {
+.description-items__item_1 {
     grid-area: A;
 }
 
-.compositionItem-2 {
+.description-items__item_2 {
     grid-area: B;
 }
 
-.compositionItem-3 {
+.description-items__item_3 {
     grid-area: C;
 }
 
-.compositionItem-4 {
+.description-items__item_4 {
     grid-area: E;
 }
 
-.compositionItem-5 {
+.description-items__item_5 {
     grid-area: J;
 }
 
-.compositionItem-6 {
+.description-items__item_6 {
     grid-area: K;
 }
 
-.imgItem {
+.description-items__img {
     grid-area: D;
     align-self : center;
     justify-self : center;
 }
 
-.flexItem{
+.description-items__item{
     display: flex;
     flex-direction: column;
     align-items: center;

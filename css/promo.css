@@ -1,4 +1,4 @@
-#myVideo {
+#my-video {
     object-fit: fill;
     position: absolute;
     top: 0;
@@ -7,7 +7,7 @@
     height:99%;
 }
 
-.container {
+.header-promo {
     z-index: 999;
     width: 90%;
     height: 97vh;
@@ -17,7 +17,7 @@
     align-items: center;
 }
 
-.promo {
+.header-promo__content {
     display: grid;
     gap: 20px;
     width: 100%;
@@ -28,7 +28,7 @@
     "B  C";
 }
 
-.promoTitle {
+.header-promo__title {
     align-self : stretch;
     text-align: center;
     margin-bottom: 5%;
@@ -37,27 +37,27 @@
     font-size: 6rem;
 }
 
-.promoTitle:hover {
+.header-promo__title:hover {
     color: #FF9700FF;
     transition: 0.3s all linear;
 }
-.promoDescription {
+.promo-content__description-title {
     text-align: center;
     height:60%;
     grid-area: B;
 }
-.promoDescription1 {
+.promo-content__description-text {
     height: 70%;
     grid-area: C;
     text-align: center;
     align-self : center;
 }
 
-.border {
+.promo-description-text__list {
     padding: 0;
 }
 
-.border > li {
+.promo-description-text__list-item {
     list-style-type: none;
     font-family: "RalewayRegular", sans-serif;
     padding: 7px 20px;
@@ -73,14 +73,12 @@
     transition: 0.3s all linear;
     background-color: #d9d9d9;
 }
-.border li:hover {
+.promo-description-text__list-item:hover {
     border-left: 10px solid transparent;
-}
-.border li:hover {
     border-right: 10px solid #efc612;
 }
 
-.btnOrder {
+.btn-order {
     width: 150px;
     height: 50px;
     color: #fff;
@@ -99,12 +97,12 @@
     4px 4px 5px 0px rgba(0,0,0,.1);
     outline: none;
 }
-.btnOrder{
+.btn-order{
     background: rgb(255,151,0);
     border: none;
     z-index: 1;
 }
-.btnOrder:after {
+.btn-order:after {
     position: absolute;
     content: "";
     width: 100%;
@@ -118,14 +116,14 @@
     box-shadow:inset 2px 2px 2px 0 rgba(255,255,255,.5);
     transition: all 0.3s ease;
 }
-.btnOrder:hover {
+.btn-order:hover {
     color: #000;
 }
-.btnOrder:hover:after {
+.btn-order:hover:after {
     top: auto;
     bottom: 0;
     height: 100%;
 }
-.btnOrder:active {
+.btn-order:active {
     top: 2px;
 }

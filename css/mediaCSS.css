@@ -1,21 +1,21 @@
 @media screen and (max-width: 940px) {
-    .promo {
+    .header-promo__content {
         height: 100%;
         grid-template-areas:
                 "B"
                 "C";
     }
-    .composition {
+    .section-description__items {
         grid-template-areas:
                 "A B C"
                 "D D D"
                 "E J K";
     }
-    .promoTitle {
+    .header-promo__title {
         font-size: 3rem;
     }
 
-    .circle-image{
+    .item__circle-image{
         width:100px;
         height: 100px;
     }
@@ -23,22 +23,22 @@
     .text {
         font-size: 16px;
     }
-    .containerPromo {
+    .section-promo__content {
         grid-template-areas:
 "C "
 "B ";
     }
-    .doc {
+    .img__doc {
         width: 300px;
         height: 400px;
     }
-    .promoUl {
+    .promo-description__item {
         margin-top: 5%;
         font-size: 14px;
         display: flex;
         justify-content: space-between;
     }
-    .formPrice {
+    .section-order__content {
         width: 70%;
         height: 60vh;
 
@@ -46,25 +46,25 @@
 "B "
 "C";
     }
-    .prodIMG {
+    .img__prod {
         width: 300px;
         height: 400px;
     }
-    .formOrderImg {
+    .content__img {
         height: 35%;
     }
-    #slider ul {
+    #section-slider__slider ul {
         height: 20%;
     }
-    .users {
+    .item__user {
         width: 50vw;
         height: 45vh;
     }
-    .users > div > img {
+    .item__user > div > img {
         width: 150px;
         height: 125px;
     }
-    i.control_prev, i.control_next {
+    i.js-control_prev, i.js-control_next {
         font-size: 12px;
     }
 
@@ -75,51 +75,51 @@
 }
 
 @media screen and (max-width: 600px) {
-    .promo {
+    .header-promo__content {
         height: 60%;
         grid-template-areas:
                 "B"
                 "C";
     }
-    .composition {
+    .section-description__items {
         grid-template-areas:
                 "A B C"
                 "D D D"
                 "E J K";
     }
-    .promoTitle {
+    .header-promo__title {
         font-size: 2rem;
     }
 
-    .border > li {
+    .promo-description-text__list > li {
         font-size: 14px;
     }
-    .prodIMG {
+    .img__prod {
         width: 200px;
         height: 300px;
     }
 
-    .circle-image{
+    .item__circle-image{
         width:70px;
         height: 70px;
     }
     .text {
         font-size: 14px;
     }
-    .promoUl {
+    .promo-description__item {
         margin-top: 5%;
         font-size: 12px;
 
     }
-    .doc {
+    .img__doc {
         width: 200px;
         height: 300px;
     }
 
-    .time {
+    .section-order__timer {
         font-size:2rem;
     }
-    .formOrderTitle {
+    .section-order__title {
         font-size: 3rem;
 
     }
