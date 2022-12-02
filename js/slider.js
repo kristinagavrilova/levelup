@@ -16,7 +16,7 @@ function moveLeft() {
     $('.section-slider__item').animate({
         left: +slideWidth
     }, 200, function () {
-        $('.item__user:last-child').prependTo('section-slider__item');
+        $('.item__user:last-child').prependTo('.section-slider__item');
         $('.section-slider__item').css('left', '');
     });
 }
