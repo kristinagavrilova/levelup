@@ -28,8 +28,8 @@
 
     .section-promo__content {
         grid-template-areas:
-"A "
-"B ";
+                "A "
+                "B ";
     }
 
     .img__doc {
@@ -44,7 +44,7 @@
         justify-content: space-between;
     }
 
-    .content__text{
+    .content__text {
         width: 100%;
     }
 
@@ -53,8 +53,8 @@
         height: 60vh;
 
         grid-template-areas:
-"B "
-"C";
+                "B "
+                "C";
     }
 
     .img__prod {
@@ -82,8 +82,6 @@
     i.js-control_prev, i.js-control_next {
         font-size: 12px;
     }
-
-
 }
 
 @media screen and (max-width: 600px) {
@@ -103,9 +101,11 @@
     .header-promo__title {
         font-size: 2rem;
     }
-.user__opinion{
-    font-size: 10px;
-}
+
+    .user__opinion {
+        font-size: 10px;
+    }
+
     .promo-description-text__list > li {
         font-size: 14px;
     }
@@ -143,6 +143,4 @@
         font-size: 3rem;
 
     }
-
-
 }
